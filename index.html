@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Sign-up Form</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <aside class="img-banner">
+      <div class="logo_overlay">
+        <img src="./images/odin-lined.png" alt="odin logo" />
+        <h1 class="img-banner_heading">Odin</h1>
+      </div>
+      <p class="img-banner_credits">
+        Photo by <a href="#">Hailie West</a> on <a href="#">Unsplash</a>
+      </p>
+    </aside>
+    <main class="main">
+      <div class="main-text_container">
+        <p class="main-text">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deeprest dreams. Sign up
+          now to get started.
+        </p>
+        <p class="main-text">You know you want to.</p>
+      </div>
+
+      <form class="form" id="form" action="" method="">
+        <fieldset class="form-wrapper">
+          <h2 class="form-heading">Let's do this!</h2>
+          <div class="input_container">
+            <label for="firstName">First Name</label>
+            <input
+              required
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="John"
+            />
+          </div>
+          <div class="input_container">
+            <label for="lastName">Last Name</label>
+            <input
+              required
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Doe"
+            />
+          </div>
+          <div class="input_container">
+            <label for="email">Email</label>
+            <input
+              required
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Example@Email.com"
+            />
+          </div>
+          <div class="input_container">
+            <label for="phone">Phone Number</label>
+            <input
+              required
+              placeholder="+00000000000"
+              minlength="12"
+              maxlength="12"
+              type="phone"
+              name="phone"
+              id="phone"
+            />
+          </div>
+          <div class="input_container">
+            <label for="password">Password</label>
+            <input
+              required
+              minlength="10"
+              type="password"
+              name="password"
+              id="password"
+            />
+          </div>
+          <div class="input_container">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              required
+              minlength="10"
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+            />
+          </div>
+        </fieldset>
+        <p class="formMessage"></p>
+        <button class="btn" id="submitbtn" type="submit">Create Account</button>
+      </form>
+
+      <p class="main-register">
+        Already have an account? <a href="#">Log In</a>
+      </p>
+    </main>
+  </body>
+</html>
